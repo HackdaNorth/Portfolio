@@ -1,20 +1,29 @@
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: Index.js
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines routes for BrowserRouter
+ * 
+ **/
+
+//import depend
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style.css";
 
-import reportWebVitals from "./reportWebVitals";
-//import depend
 import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 //import pages
-import { Routes, Route, Link } from "react-router-dom";
-import "./style.css";
-
 import Layout from "./pages/Layout";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
+//CSS
+import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,7 +41,4 @@ root.render(
   </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

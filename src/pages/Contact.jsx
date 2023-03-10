@@ -1,5 +1,15 @@
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: Contact.tsx
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines a basic Gallery Page, for personal photos.
+ * 
+ **/
+
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Navbar from "../pages/Navbar";
 import "../style.css";
 

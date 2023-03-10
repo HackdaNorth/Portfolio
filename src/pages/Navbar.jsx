@@ -1,3 +1,13 @@
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: Navbar.tsx
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines a basic Navbar //Further Comments Required
+ * 
+ **/
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import "../style.css";

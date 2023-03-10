@@ -1,3 +1,14 @@
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: Landing.tsx
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines a landing page with some basic content, for users visting the webpage.
+ * 
+ **/
+
 import React, { useState } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 import Navbar from "../pages/Navbar";

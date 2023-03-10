@@ -1,3 +1,14 @@
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: Education.tsx
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines a basic Education page.
+ * 
+ **/
+
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Navbar from "../pages/Navbar";

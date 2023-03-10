@@ -1,4 +1,14 @@
 /* Global Styles */
+/**
+ * Author:    HeckDanNorth
+ * Created:   09.03.2023
+ * 
+ * Class: style.css
+ * 
+ * Library: React / React-Photo-Gallery 
+ * Description: Defines css styles for entire web app
+ * 
+ **/
 
 * {
   box-sizing: border-box;
