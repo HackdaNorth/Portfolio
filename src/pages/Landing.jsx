@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
 import Navbar from "../pages/Navbar";
-import "../App.css";
+import "../style.css";
 
 function Landing() {
   const [isDarkMode, setIsDarkMode] = useState(false);

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Navbar from "../pages/Navbar";
 import PhotoAlbum from "react-photo-album";
-import "../App.css";
+import "../style.css";
 
 const images = [
   {

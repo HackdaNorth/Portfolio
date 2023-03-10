@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./App.css";
+import "./style.css";
 
 import reportWebVitals from "./reportWebVitals";
 //import depend
 import { BrowserRouter } from "react-router-dom";
 //import pages
 import { Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+import "./style.css";
 
-import Navbar from "./pages/Navbar";
 import Layout from "./pages/Layout";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
