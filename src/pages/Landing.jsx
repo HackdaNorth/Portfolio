@@ -1,25 +1,48 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
-import './App.css';
+// import { Link, animateScroll as scroll } from "react-scroll";
+import Navbar from "../pages/Navbar";
+import PhotoAlbum from "react-photo-album";
+import '../App.css';
 
-function App() {
+
+
+function Landing() {
+
+
+
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const toggleDarkMode = () => {
     console.log("dark toggled");
     setIsDarkMode(!isDarkMode);
   };
 
+  const images = [
+    {
+      id: 1,
+      src: 'https://pp.iontra.lol/api/v1/t/249b1e344f0b321058cf1d23767c28c56052a63a/7rwaalr6/fit_1280',
+      alt: 'Image 1',
+    },
+    {
+      id: 2,
+      src: 'https://pp.iontra.lol/api/v1/t/7d2bd6d1d89f5c007e8cc3f8d108f0a723cb7e21/7rwaalr6/fit_1280',
+      alt: 'Image 2',
+    },
+    {
+      id: 3,
+      src: 'https://pp.iontra.lol/api/v1/t/6238473f71eee7ecbde60707bb90a93e54351a75/7rwaalr6/fit_1280',
+      alt: 'Image 3',
+    },
+    {
+      id: 4,
+      src: 'https://pp.iontra.lol/api/v1/t/aea63991f631fa8060e2b1f1704a62b5b98877db/7rwaalr6/fit_1280',
+      alt: 'Image 4',
+    },
+  ];
   return (
     <div className={`resume ${isDarkMode ? 'dark-mode' : ''}`}>
-      <nav>
-        <ul className="nb" >
-          <li className="nb" ><Link to="objective" spy={true} smooth={true} duration={500} delay={400}>About me</Link></li>
-          <li className="nb" ><Link to="education" spy={true} smooth={true} duration={500} delay={400}>Education</Link></li>
-          <li className="nb" ><Link to="experience" spy={true} smooth={true} duration={500} delay={400}>Experience</Link></li>
-          <li className="nb" ><Link to="skills" spy={true} smooth={true} duration={500} delay={400}>Skills</Link></li>
-        </ul>
-      </nav>
+    <Navbar />
       <header>
         <div className="profile">
           <img src="bitmojiavatar.png" alt="Profile" />
@@ -72,8 +95,17 @@ function App() {
       <button className="toggle-mode" onClick={toggleDarkMode}>
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
+    {/* <PhotoAlbum 
+        layout="columns"
+        photos={images}
+        columns="1"
+        spacing="30"
+        padding="5"
+        sizes="500px"
+        /> */}
     </div>
   );
 }
 
-export default App;
+export default Landing;
+
