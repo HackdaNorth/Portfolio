@@ -18,7 +18,7 @@ import Profile from "./Profile";
 const images = [
   {
     id: 1,
-    src: "https://pp.iontra.lol/api/v1/t/7d2bd6d1d89f5c007e8cc3f8d108f0a723cb7e21/7rwaalr6/fit_1280",
+    src: "imgurl",
     alt: "Image 1",
   },
 ];
