@@ -1,19 +1,20 @@
 /**
  * Author:    HeckDanNorth
- * Created:   09.03.2023
+ * Created:   11.03.2023
  * 
- * Class: Contact.tsx
+ * Class: Resume.jsx
  * 
  * Library: React / React-Photo-Gallery 
- * Description: Defines a basic Gallery Page, for personal photos.
+ * Description: Defines a download
  * 
  **/
 
 import React, { useState } from "react";
-import Navbar from "../pages/Navbar";
+import Navbar from "./Navbar";
 import "../style.css";
+import Profile from "./Profile";
 
-function Contact() {
+function Resume() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
@@ -24,7 +25,7 @@ function Contact() {
     <div className={`resume ${isDarkMode ? "dark-mode" : ""}`}>
       <Navbar />
       <header>
-
+      <Profile />
       </header>
       <footer>
 
@@ -33,4 +34,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Resume;

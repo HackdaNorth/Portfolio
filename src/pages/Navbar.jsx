@@ -30,7 +30,7 @@ function Navbar() {
           <Link to="/About">About</Link>
         </li>
         <li className="nb">
-          <Link to="/Contact">Contact</Link>
+          <Link to="/Resume">Download CV</Link>
         </li>
       </ul>
     </nav>

@@ -13,27 +13,13 @@ import ReactDOM from "react-dom";
 import Navbar from "../pages/Navbar";
 import PhotoAlbum from "react-photo-album";
 import "../style.css";
+import Profile from "./Profile";
 
 const images = [
   {
     id: 1,
-    src: "https://pp.iontra.lol/api/v1/t/249b1e344f0b321058cf1d23767c28c56052a63a/7rwaalr6/fit_1280",
-    alt: "Image 1",
-  },
-  {
-    id: 2,
     src: "https://pp.iontra.lol/api/v1/t/7d2bd6d1d89f5c007e8cc3f8d108f0a723cb7e21/7rwaalr6/fit_1280",
-    alt: "Image 2",
-  },
-  {
-    id: 3,
-    src: "https://pp.iontra.lol/api/v1/t/6238473f71eee7ecbde60707bb90a93e54351a75/7rwaalr6/fit_1280",
-    alt: "Image 3",
-  },
-  {
-    id: 4,
-    src: "https://pp.iontra.lol/api/v1/t/aea63991f631fa8060e2b1f1704a62b5b98877db/7rwaalr6/fit_1280",
-    alt: "Image 4",
+    alt: "Image 1",
   },
 ];
 
@@ -49,6 +35,18 @@ function About() {
     <div className={`resume ${isDarkMode ? "dark-mode" : ""}`}>
       <Navbar />
       <header>
+        <Profile />
+        <section className="objective">
+        <h2 className="pRoot">root</h2>
+        <h2 className="pColon">:</h2>
+        <h2 className="pSiggle">~</h2>
+        <h2 className="pRest">$ ls Objective</h2>
+        <p>
+          To obtain a challenging position in the field of software engineering
+          where I can utilize my technical skills and experience to develop
+          innovative solutions and contribute to the success of the company.
+        </p>
+      </section>
         <PhotoAlbum
           layout="columns"
           photos={images}

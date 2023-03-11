@@ -18,7 +18,7 @@ import { Routes, Route } from "react-router-dom";
 //import pages
 import Layout from "./pages/Layout";
 import Landing from "./pages/Landing";
-import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
@@ -34,7 +34,7 @@ root.render(
         <Route path="Experience" element={<Experience />} />
         <Route path="Education" element={<Education />} />
         <Route path="About" element={<About />} />
-        <Route path="Contact" element={<Contact />} />
+        <Route path="Resume" element={<Resume />} />
         <Route path="*" element={<Landing />} />
       </Route>
     </Routes>

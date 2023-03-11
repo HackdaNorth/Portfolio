@@ -61,7 +61,8 @@ a {
   margin: 0 auto;
   padding: 2rem;
   background-color: #D2D2D2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 
 }
 
@@ -79,7 +80,7 @@ a {
   align-items: center;
   border-radius: 50%;
   margin-right: 2rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 4px solid #4666FF;
 }
@@ -92,7 +93,7 @@ a {
 }
 
 .contact-info {
-  margin-left: 19.7rem;
+  margin-left: 17.7rem;
   margin-top: -7rem;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -231,7 +232,7 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  width: 650px;
+  width: 750px;
 }
 
 li.nb {
